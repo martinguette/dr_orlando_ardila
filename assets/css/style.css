@@ -47,8 +47,8 @@
    * typography
    */
 
-  --ff-roboto: "Roboto", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
+  --ff-roboto: 'Roboto', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 
   --fs-1: 4rem;
   --fs-2: 3.6rem;
@@ -314,7 +314,7 @@ body {
 .logo {
   color: var(--oxford-blue-1);
   font-family: var(--ff-poppins);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: var(--fw-800);
 }
 
@@ -668,7 +668,7 @@ body {
 }
 
 .blog-card .card-link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -1243,7 +1243,7 @@ body {
      */
 
     --fs-2: 8rem;
-    --fs-1: 5.5rem;
+    --fs-1: 4.5rem;
     --fs-3: 4.8rem;
     --fs-4: 5.7rem;
   }
