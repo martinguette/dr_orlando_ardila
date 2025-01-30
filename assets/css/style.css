@@ -217,6 +217,14 @@ body {
   margin-block-end: 10px;
   margin-block-start: 10px;
 }
+.section-subtitle4 {
+  color: var(--fs-1);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  margin-block-end: 10px;
+  margin-block-start: 10px;
+}
 .section-subtitle1:is(:hover, :focus) {
   color: var(--oxford-blue-1);
 }
@@ -497,6 +505,53 @@ body {
 }
 
 .service-card:is(:hover) {
+  border-color: var(--carolina-blue);
+}
+
+/*-----------------------------------*\
+  #BOOKS
+\*-----------------------------------*/
+
+.book-banner {
+  display: none;
+}
+
+.book {
+  padding-block-end: 0;
+}
+
+.book .section-title {
+  margin-block-end: 50px;
+}
+.contact .section-title {
+  margin-block-end: 50px;
+}
+
+.book-list {
+  display: grid;
+  gap: 15px;
+}
+
+.book-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  min-height: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-4);
+  padding: 30px;
+}
+
+.book-card .card-icon {
+  width: 50px;
+  flex-shrink: 0;
+}
+
+.book-card .card-title {
+  margin-block-end: 8px;
+}
+
+.book-card:is(:hover) {
   border-color: var(--carolina-blue);
 }
 
