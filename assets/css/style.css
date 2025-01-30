@@ -15,23 +15,28 @@
    * colors
    */
 
-  --light-steel-blue: hsl(218, 33%, 77%);
-  --royal-blue-light: hsl(225, 68%, 53%);
-  --flickr-blue_30: hsla(225, 68%, 53%, 0.3);
-  --carolina-blue: hsl(201, 92%, 47%);
-  --oxford-blue-1: hsl(218, 70%, 18%);
-  --oxford-blue-2: hsl(217, 100%, 12%);
-  --oxford-blue-3: hsl(218, 71%, 11%);
-  --gainsboro_50: hsla(0, 0%, 85%, 0.5);
-  --lavender-web: hsl(225, 67%, 91%);
-  --sonic-silver: hsl(0, 0%, 47%);
-  --light-gray: hsl(0, 0%, 84%);
-  --cultured: hsl(0, 0%, 97%);
-  --black_10: hsla(0, 0%, 0%, 0.1);
-  --black_8: hsla(0, 0%, 0%, 0.08);
+  --light-steel-blue: hsl(225, 67%, 91%); /* Dorado suave y refinado */
+  --royal-blue-light: hsl(210, 45%, 30%); /* Azul petróleo más sobrio */
+  --royal-blue-light1: hsl(210, 94%, 19%);
+  --flickr-blue_30: hsla(210, 45%, 30%, 0.3);
+  --carolina-blue: hsl(195, 80%, 28%); /* Azul oscuro con toque de verde */
+  --oxford-blue-1: hsl(220, 65%, 12%); /* Azul-negro profundo para contrastes */
+  --oxford-blue-2: hsl(228, 75%, 8%); /* Azul noche, casi negro */
+  --oxford-blue-3: hsl(
+    230,
+    80%,
+    6%
+  ); /* Azul muy oscuro con un leve toque cálido */
+  --gainsboro_50: hsla(43, 40%, 80%, 0.5); /* Beige-dorado tenue */
+  --lavender-web: hsl(38, 80%, 80%); /* Amarillo oro claro */
+  --sonic-silver: hsl(0, 0%, 32%); /* Gris oscuro sobrio */
+  --light-gray: hsl(0, 0%, 72%); /* Gris más cálido y refinado */
+  --cultured: hsl(0, 0%, 94%); /* Blanco roto con un leve matiz cálido */
+  --black_10: hsla(0, 0%, 0%, 0.2);
+  --black_8: hsla(0, 0%, 0%, 0.12);
   --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --jet: hsl(0, 0%, 20%);
+  --black: hsl(0, 0%, 5%); /* Negro con un leve tono cálido */
+  --jet: hsl(0, 0%, 15%); /* Negro-gris sofisticado */
 
   /**
    * gradient color
@@ -203,6 +208,15 @@ body {
   margin-block-end: 10px;
   margin-block-start: 10px;
 }
+.section-subtitle3 {
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  margin-block-end: 10px;
+  margin-block-start: 10px;
+}
 .section-subtitle1:is(:hover, :focus) {
   color: var(--oxford-blue-1);
 }
@@ -235,8 +249,8 @@ body {
 .btn {
   background-image: linear-gradient(
     var(--deg, 90deg),
-    var(--carolina-blue) 0%,
-    var(--royal-blue-light) 100%
+    var(--royal-blue-light) 0%,
+    var(--carolina-blue) 100%
   );
   color: var(--white);
   font-size: var(--fs-7);
@@ -247,11 +261,28 @@ body {
   box-shadow: var(--shadow-4);
 }
 
-.btn-link {
+.btn1 {
+  background-image: linear-gradient(
+    var(--deg, 90deg),
+    var(--oxford-blue-1) 0%,
+    var(--royal-blue-light1) 100%
+  );
+  color: var(--white);
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: var(--radius-4);
+  box-shadow: var(--shadow-4);
+}
+
+.btn-link,
+.btn1-link {
   display: inline-block;
 }
 
-.btn:is(:hover, :focus) {
+.btn:is(:hover, :focus),
+.btn1:is(:hover, :focus) {
   --deg: -90deg;
 }
 
@@ -587,7 +618,11 @@ body {
 \*-----------------------------------*/
 
 .cta {
-  background-color: var(--oxford-blue-1);
+  background-image: linear-gradient(
+    var(--deg, 90deg),
+    var(--royal-blue-light) 0%,
+    var(--carolina-blue) 100%
+  );
 }
 
 .cta-banner {
@@ -604,7 +639,8 @@ body {
   margin-block-end: 30px;
 }
 
-.cta .btn {
+.cta .btn,
+.cta .btn1 {
   max-width: max-content;
 }
 
@@ -1085,7 +1121,11 @@ body {
 
   .header-top {
     display: block;
-    background-color: var(--oxford-blue-1);
+    background-image: linear-gradient(
+      var(--deg, 90deg),
+      var(--royal-blue-light) 0%,
+      var(--carolina-blue) 100%
+    );
     color: var(--white);
     padding-block: 20px;
   }
@@ -1110,7 +1150,7 @@ body {
   }
 
   .contact-item ion-icon {
-    color: var(--royal-blue-light);
+    color: var(--light-steel-blue);
     --ionicon-stroke-width: 40px;
   }
 
